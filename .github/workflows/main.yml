@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: pkishorez/vercel-preview-url@v0.0.4
+        uses: pkishorez/vercel-preview-url@v0.0.6
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
