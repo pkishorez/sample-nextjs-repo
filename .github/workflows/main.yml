@@ -8,6 +8,8 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: pkishorez/vercel-preview-url@v0.0.3
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
           who-to-greet: "Mona the Octocat"
       # Use the output from the `hello` step
