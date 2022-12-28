@@ -7,11 +7,11 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: pkishorez/vercel-preview-url@v0.0.6
+        uses: pkishorez/vercel-preview-url@v0.0.7
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
-          who-to-greet: "Mona the Octocat"
+          projectId: prj_o0Yr85BNzA5TrXNhcN0GkkwXNEcB
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The Deployment URL was ${{ steps.hello.outputs.vercelDeploymentUrl }}"
